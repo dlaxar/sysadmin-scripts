@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ "$1" = "-h" ]
+then
+	echo "1) script to execute, 2) MINUTES"	
+	exit 0
+fi
+
 MINUTES=$2
 
 if [[ $2 -eq "" ]]
